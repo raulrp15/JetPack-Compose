@@ -7,6 +7,8 @@ import com.example.listacontactosjc.Composables.ItemList
 
 
 class ListaContacto : ComponentActivity() {
+    // Crea la pantalla y muestra el layout de la lista de contactos con los contactos un lista
+    // de estos
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

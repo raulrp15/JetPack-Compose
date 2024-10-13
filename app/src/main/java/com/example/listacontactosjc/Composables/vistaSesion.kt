@@ -15,12 +15,18 @@ import androidx.compose.ui.platform.LocalContext
 import com.example.listacontactosjc.ListaContacto
 import com.example.listacontactosjc.MainActivity
 
+// Funcion JC que muestra un menu de inicio de sesion
 @Composable
 fun SesionView(){
+    // Texto para insertar el nombre del usuario que guarda el nombre, en este caso vacio
     var textUs by rememberSaveable { mutableStateOf("") }
+    // Texto para insertar la contraseña del usuario que guarda el nombre, en este caso vacio
     var textPs by rememberSaveable { mutableStateOf("") }
+    // Se recoge el contexto actual
     val context:Context = LocalContext.current
 
+    // Se crea una columna que tendrá dos insertadores de texto, uno para el nombre del usuario y
+    // otro para la contraseña de este, y un boton que pasara a la pantalla de la lista de contactos
     Column(){
         TextField(
             value = textUs,
